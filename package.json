@@ -15,6 +15,14 @@
     "postinstall": "playwright install chromium"
   },
   "license": "MIT",
+  "homepage": "https://github.com/albinjal/codewiki#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albinjal/codewiki.git"
+  },
+  "bugs": {
+    "url": "https://github.com/albinjal/codewiki/issues"
+  },
   "dependencies": {
     "commander": "^12.0.0",
     "playwright": "^1.44.0"
