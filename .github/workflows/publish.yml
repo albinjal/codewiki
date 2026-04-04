@@ -23,8 +23,6 @@ jobs:
       - run: bun install --frozen-lockfile
       - run: bun run typecheck
       - run: bun run build
-      - name: Verify shebang
-        run: head -1 bin/codewiki && xxd bin/codewiki | head -2
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
