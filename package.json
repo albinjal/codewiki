@@ -1,0 +1,26 @@
+{
+  "name": "codewiki",
+  "version": "0.1.0",
+  "description": "Fetch and read Code Wiki docs for GitHub repos",
+  "type": "module",
+  "bin": {
+    "codewiki": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build src/cli.ts --target=node --packages=external --outfile=dist/cli.js --banner='#!/usr/bin/env node' && chmod +x dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "playwright install chromium"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "playwright": "^1.44.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
