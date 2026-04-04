@@ -1,6 +1,6 @@
 {
   "name": "codewiki",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fetch and read Code Wiki docs for GitHub repos",
   "type": "module",
   "bin": {
@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun build src/cli.ts --target=node --packages=external --outfile=dist/cli.js --banner='#!/usr/bin/env node' && chmod +x dist/cli.js",
+    "build": "bun build src/cli.ts --target=node --packages=external --outfile=dist/cli.js && printf '#!/usr/bin/env node\\n' | cat - dist/cli.js > dist/cli.tmp.js && mv dist/cli.tmp.js dist/cli.js && chmod +x dist/cli.js",
     "typecheck": "tsc --noEmit",
     "postinstall": "playwright install chromium"
   },
