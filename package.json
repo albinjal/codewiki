@@ -1,5 +1,5 @@
 {
-  "name": "@albinjal/codewiki",
+  "name": "codewiki-cli",
   "version": "0.1.0",
   "description": "Fetch and read Code Wiki docs for GitHub repos",
   "type": "module",

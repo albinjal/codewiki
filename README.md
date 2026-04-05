@@ -5,7 +5,7 @@ Unofficial CLI for fetching and reading [Code Wiki](https://codewiki.google) doc
 ## Install
 
 ```sh
-npm install -g @albinjal/codewiki
+npm install -g codewiki-cli
 ```
 
 Chromium is downloaded automatically on install.
