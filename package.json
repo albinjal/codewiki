@@ -1,6 +1,6 @@
 {
-  "name": "codewiki",
-  "version": "0.2.1",
+  "name": "@albinjal/codewiki",
+  "version": "0.1.0",
   "description": "Fetch and read Code Wiki docs for GitHub repos",
   "type": "module",
   "bin": {
