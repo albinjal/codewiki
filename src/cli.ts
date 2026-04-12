@@ -85,8 +85,6 @@ program
     console.log(text);
   });
 
-program.parse();
-
 class Semaphore {
   private queue: (() => void)[] = [];
   private active = 0;
@@ -111,3 +109,5 @@ class Semaphore {
     });
   }
 }
+
+program.parse();
